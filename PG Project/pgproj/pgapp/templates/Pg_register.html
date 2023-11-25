@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PG Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+
+<!-- Font Awesome (for icons) -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+       body {
+        background:linear-gradient(135deg,  #ddd6f3 , #faaca8);
+        /* background:linear-gradient(135deg,#9795EF,#F9C5D1); */
+      
+            /* background: linear-gradient(135deg, #FAB2FF 10%, #6456dc 100%); */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .card1 {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px auto;
+            width: 800px;
+            height: 500px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: #ff1493;
+            /* background: linear-gradient(135deg,#36d1dc , #5b86e5); */
+/* background: linear-gradient(135deg,#ff5f6d , #ffc371); */
+            background: linear-gradient(to bottom right, #dc96fa, #bc5abb);
+        }
+        .card2 {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px auto;
+            width: 800px;
+            height: 350px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background: linear-gradient(to bottom right, #dc96fa, #bc5abb);
+        }
+        .card3 {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px auto;
+            width: 800px;
+            height: 500px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background: linear-gradient(to bottom right, #dc96fa, #bc5abb);
+        }
+        .card4 {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px auto;
+            width: 800px;
+            height: 590px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background: linear-gradient(to bottom right, #dc96fa, #bc5abb);
+        }
+        .card1:hover, .card2:hover, .card3:hover,.card4:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6); /* Darken the shadow on hover */
+        }
+        .form-container {
+            border: 2px solid #1d1b1b;
+            padding: 10px;
+            border-radius: 5px;
+            width: 750px;
+            height: 500px;
+            margin: 0 auto;
+            background-color:#e2abd4;
+        }
+        .form-container1 {
+            border: 2px solid #1d1b1b;
+            padding: 10px;
+            border-radius: 5px;
+            width: 750px;
+            height: 550px;
+            margin: 0 auto;
+            background-color:#e2abd4;
+        }
+        .btn {
+        transition: transform 0.3s;
+        background: linear-gradient(135deg,#833ab4,#f35da6);
+    }
+    .w3-sidebar {
+            background: linear-gradient(135deg, #FAB2FF 20%, #1904E5 100%);
+            width: 70px;
+            /* margin-top: -2%; */
+        }
+        .navbar {
+        padding: 5px 0; /* Adjust the padding as needed */
+    }
+    .pacifico-font {
+            font-family: 'Pacifico', cursive;
+            
+            text-align: center;
+            color: #333; /* Choose your desired text color */
+        }
+
+        .fixed-navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000; /* Ensure the navbar is on top of other content */
+    }
+
+    /* Adjust content container to add space at the top */
+    .content-container {
+      margin-top: 90px; /* Adjust this value based on your navigation bar height */
+     } 
+
+    </style>
+</head>
+  <body>
+    <nav class="navbar navbar-expand-dark navbar-light fixed-navbar" style="background: linear-gradient(135deg, #FAB2FF 20%, #1904E5 100%); height:90px;">
+      <h1 style="color: black; margin-left: 2%;"><b>PG4You</b></h1>
+      <i class="fa fa-power-off" style="font-size: 36px; margin-left:92%;color: white;margin-top: -50%;"></i>
+    </nav>
+    <div class="w3-sidebar w3-bar-block w3-xxlarge">
+      <a id="homeLink" href="#" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a>
+      <a id="fileLink" href="#" class="w3-bar-item w3-button"><i class="fa fa-file"></i></a>
+      <a id="envelopeLink" href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+      <a id="phoneLink" href="#" class="w3-bar-item w3-button"><i class="fa fa-phone"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+    </div>
+    <div class="container content-container">
+      <center>
+        <h1 class="pacifico-font" style="font-size: 30px;"><b>REGISTER YOUR PG</b></h1>
+      </center>
+      <div class="page" id="pg_page">
+    <br>
+    <div class="card1">
+        <h3 class="pacifico-font" style="font-size: 18px;"><b>PG Information</b></h3>
+        <div class="form-container">
+            <form>
+              <div class="form-group">
+                <label for="name">PG Name :</label>
+                <input type="text" class="form-control" id="pg_name" placeholder="Enter the Name of your Pg" required >
+              </div>
+              <div class="form-group">
+                <label for="location">LOCATION :</label>
+                <input type="text" class="form-control" id="pg_loaction" placeholder="Enter Location" required>
+              </div>
+              <div class="form-group">
+                <label for="pg_type" >PG TYPE :</label>
+              <select type="select" class="form-control" id="pg_type" required >
+                <option value="select">Select</option>
+                <option value="Girls pg">Girls pg</option>
+                <option value="Boys pg">Boys pg</option>
+                <option value="Both girls and boys pg">Both girls and boys pg</option>
+              </select>
+              </div>
+              <div class="form-group ">
+                <label for="contact">CONTACT INFORMATION :</label>
+                <div>
+                  <label for="location">Email :</label>
+                  <input type="text" class="form-control" id="pg_email" placeholder="Enter email id" required>
+                  <label for="location">Phone no. :</label>
+                  <input type="text" class="form-control" id="pg_phone" placeholder="Enter phone number" required>
+                </div>
+              </div>
+            </form>
+          </div>
+    </div>
+    <div class="card4">
+        <h3 class="pacifico-font" style="font-size: 18px;"><b>Facilities and Amenities</b></h3>
+        <div class="form-container1">
+          <form>
+            <div class="form-group">
+              <label for="room_type">ROOM TYPES :</label>
+              <input type="text" class="form-control" id="room_type" placeholder="Enter the room type ( single, double ,triple etc)">
+            </div>
+            <div class="form-group">
+              <label for="meal">MEALS :</label>
+              <select class="form-control" name="meal" id="meals">
+                <option value="select">Select</option>
+                <option value="One Time">One Time</option>
+                <option value="Two time">Two Time</option>
+                <option value="Three Time">Three Time</option>
+                <option value="Four time">Four Time</option>
+                <option value="Four time">Not provided</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="room_type">AC ROOMS AVAILABLE:</label>
+              <select type="select" class="form-control" id="ac_room" >
+                <option value="select">Select</option>
+                <option value="YES">YES</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="room_type">LAUNDARY PROVIDED :</label>
+              <select type="select" class="form-control" id="laundary" >
+                <option value="select">Select</option>
+                <option value="Yes">YES</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="furnished" >FURNISHED/UNFURNISGED :</label>
+              <select type="select" class="form-control" id="furnish" >
+                <option value="select">Select</option>
+                <option value="Furnished">Furnished</option>
+                <option value="Unfurnished">Unfurnished</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="furnished">WIFI PROVIDED :</label>
+              <select type="select" class="form-control" id="wifi" >
+                <option value="select">Select</option>
+                <option value="Yes">YES</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </form>
+        </div>
+    </div>
+    <div class="card2">
+        <h3 class="pacifico-font" style="font-size: 18px;"><b>Rent Details</b> </h3>
+        <div class="form-container">
+          <form>
+            <div class="form-group">
+              <label for="name">MONTHLY RENT :</label>
+              <input type="text" class="form-control" id="m_rent" placeholder="Enter the Monthly rent">
+            </div>
+            <div class="form-group">
+              <label for="location">SECURITY DEPOSITE :</label>
+              <input type="text" class="form-control" id="s_amount" placeholder="Enter SEcuritp amount">
+            </div>
+            <div class="form-group">
+              <label for="location">ADDITIONAL CHARGES:</label>
+              <input type="text" class="form-control" id="a_charge" placeholder="Specify any additional costs (utilities, maintenance, etc.).">
+            </div>
+          </form>
+        </div>
+    </div>
+    <div class="card2">
+      <h3 class="pacifico-font" style="font-size: 18px;"><b>PG Owner Information</b></h3>
+      <div class="form-container">
+        <form>
+          <div class="form-group">
+            <label for="name">NAME :</label>
+            <input type="text" class="form-control" id="o_name" placeholder="Enter the owner name" required>
+          </div>
+          <div class="form-group">
+            <label for="location">PHONE NO. :</label>
+            <input type="text" class="form-control" id="o_phone" placeholder="Enter the owner phone number">
+          </div>
+          <div class="form-group">
+            <label for="location">ADDRESS:</label>
+            <textarea type="text" class="form-control" id="o_address" placeholder="Enter the owner address"></textarea>
+          </div>
+        </form>
+      </div>
+  </div>
+  <div class="card3">
+    <h3 class="pacifico-font" style="font-size: 18px;"><b>Additional Information</b></h3>
+    <div class="form-container">
+      <form>
+        <div class="form-group">
+          <label for="name">Description :</label>
+          <textarea type="textarea" class="form-control" id="description" placeholder="Enter the Description of your Pg"></textarea>
+        </div>
+        <div class=" form-group">
+          <label>Upload images of pg</label><span style="font-weight:bold"></span>
+          <input type="file" name="image"  id="image" accept="application/pdf"  class="form-control" required>
+          <small >Note : Maximum file size: 1MB and in pdf form only</small>
+      </div>
+      <div class=" form-group">
+        <label>Upload Rules and Policies :</label><span style="font-weight:bold"></span>
+        <input type="file" name="rules" class="form-control" id="rule" accept="application/pdf"  class="form-control" required>
+        <small >Note : Maximum file size: 1MB and in pdf form only</small>
+    </div>
+    <div class=" form-group">
+      <label>Upload Legal documents of Pg :</label><span style="font-weight:bold"></span>
+      <input type="file" name="legal" class="form-control" id="document" accept="application/pdf"  class="form-control" required>
+      <small >Note : Maximum file size: 1MB and in pdf form only</small>
+  </div>
+      </form>
+    </div>
+</div>
+<div>
+<center>
+  <button type="button"  class="btn" style="color:white;width:10%;"onclick="mysave()">Submit</button>&nbsp;
+  <a href="{% url 'home' %}" class="btn" style="color:white;width:10%;">Back</a>
+  <!-- <button type="button"  class="btn" style="color:white;width:10%;"onclick="mysave()">Back</button>&nbsp; -->
+</center>
+</div>
+<br>
+<br>
+</div>
+<script>
+  document.getElementById('pg_images').addEventListener('change', function() {
+      var fileInput = this;
+      var maxSize = 1 * 1024 * 1024; // 1MB in bytes
+
+      if (fileInput.files && fileInput.files[0]) {
+          var fileSize = fileInput.files[0].size;
+
+          if (fileSize > maxSize) {
+              alert('Please select a PDF file smaller than 1MB.');
+              fileInput.value = ''; // Clear the selected file
+          }
+      }
+  });
+
+  document.getElementById('rules').addEventListener('change', function() {
+      var fileInput = this;
+      var maxSize = 1 * 1024 * 1024; // 1MB in bytes
+
+      if (fileInput.files && fileInput.files[0]) {
+          var fileSize = fileInput.files[0].size;
+
+          if (fileSize > maxSize) {
+              alert('Please select a PDF file smaller than 1MB.');
+              fileInput.value = ''; // Clear the selected file
+          }
+      }
+  });
+</script>
+<script>
+  function mysave(){
+            var pg_name = $("#pg_name").val()
+            var pg_loaction = $("#pg_loaction").val()
+            var pg_type = $("#pg_type").val()
+            var pg_email = $("#pg_email").val()
+            var pg_phone=$("#pg_phone").val()
+            var room_type = $("#room_type").val()
+            var meals = $("#meals").val()
+            var ac_room = $("#ac_room").val()
+            var laundary = $("#laundary").val()
+            var furnish=$("#furnish").val()
+            var wifi = $("#wifi").val()
+            var m_rent = $("#m_rent").val()
+            var s_amount=$("#s_amount").val()
+            var a_charge = $("#a_charge").val()
+            var o_name = $("#o_name").val()
+            var o_phone=$("#o_phone").val()
+            var o_address = $("#o_address").val()
+            var description=$("#description").val()
+
+            if (
+              pg_name === "" ||
+              pg_loaction === "" ||
+              pg_type === "" ||
+              pg_email === "" ||
+              pg_phone === "" ||
+              room_type === "" ||
+              meals === "" ||
+              ac_room === "" ||
+              laundary === "" ||
+              furnish === "" ||
+              wifi === "" ||
+              m_rent === "" ||
+              s_amount === "" ||
+              a_charge === "" ||
+              o_name === "" ||
+              o_phone === "" ||
+              o_address === "" ||
+              description === "" ||
+              image === "" ||
+              rule === "" ||
+              document === ""
+            ) {
+              alert("Please fill all the fields");
+              return;
+              }
+
+            var data= new FormData();
+            data.append('file11',$('#image')[0].files[0])
+            data.append('file12',$('#rule')[0].files[0])
+            data.append('file13',$('#document')[0].files[0])
+            data.append('csrfmiddlewaretoken',"{{csrf_token}}");
+            data.append('pg_name', pg_name);
+            data.append('pg_loaction', pg_loaction);
+            data.append('pg_type', pg_type);
+            data.append('pg_email', pg_email);
+            data.append('pg_phone', pg_phone);
+            data.append('room_type', room_type);
+            data.append('meals', meals);
+            data.append('ac_room', ac_room);
+            data.append('laundary', laundary);
+            data.append('furnish', furnish);
+            data.append('wifi', wifi);
+            data.append('m_rent', m_rent);
+            data.append('s_amount', s_amount);
+            data.append('a_charge', a_charge);
+            data.append('o_name', o_name);
+            data.append('o_phone', o_phone);
+            data.append('o_address', o_address);
+            data.append('description', description);
+            if (confirm("Do you finally want to submit it ?")){
+              $.ajax({
+                method: "POST",
+                url: "{% url 'PG_Register_DataSaving' %}",
+                dataType: 'json',
+                processData:false,
+                contentType: false,
+                mimeType: 'multipart/form-data',
+                data: data,
+                success: function (response) {
+                    console.log(response)
+                    alert('Data saved successfully')
+                    $('#pg_page input[type="text"]').val('');
+                    $('#pg_page input[type="radio"]').val('');
+                    $('#pg_page textarea').val('');
+                    $('#pg_page select').val('');
+                    $('#pg_page input[type="file"]').val('');
+                    
+
+
+
+
+    // Validation checks
+    var phonePattern = /^\d{10}$/;
+    if (!phonePattern.test(pg_phone)) {
+        alert("Please enter a valid 10-digit phone number");
+        return;
+    }
+    
+    var phonePattern = /^\d{10}$/;
+    if (!phonePattern.test(o_phone)) {
+        alert("Please enter a valid 10-digit phone number");
+        return;
+    }
+
+    var rentPattern = /^\d+$/;
+    if (!rentPattern.test(m_rent)) {
+        alert("Please enter a valid numeric value for Monthly Rent");
+        return;
+    }
+
+    var rentPattern = /^\d+$/;
+    if (!rentPattern.test(s_amount)) {
+        alert("Please enter a valid numeric value for Security Deposit");
+        return;
+    }
+
+    var rentPattern = /^\d+$/;
+    if (!rentPattern.test(a_charge)) {
+        alert("Please enter a valid numeric value for Additional Charges");
+        return;
+    }
+
+    if (!isValidEmail(pg_email)) {
+        alert("Please enter a valid email address");
+        return;
+    }
+
+    if (!isAlphabetic(o_name)) {
+        alert("Please enter a valid alphabetic owner name");
+        return;
+    }
+
+                },
+            });
+            } 
+            else{
+              return
+            }       
+}
+function isValidEmail(email) {
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(email);
+}
+function isAlphabetic(value) {
+    var alphabeticPattern = /^[A-Za-z]+$/;
+    return alphabeticPattern.test(value);
+}
+$(document).ready(function() {
+    $("#pg_phone").on("input", function() {
+        var sanitizedInput = $(this).val().replace(/[^0-9]/g, "");
+        $(this).val(sanitizedInput);
+    });
+});
+
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      // Get the elements for the different icons
+      var homeLink = document.getElementById("homeLink");
+      var fileLink = document.getElementById("fileLink");
+      var envelopeLink = document.getElementById("envelopeLink");
+      var phoneLink = document.getElementById("phoneLink");
+  
+      // Add click event listeners to the different icon links
+      homeLink.addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent the default link behavior
+          window.location.href = homeLink.getAttribute("href");
+      });
+  
+      fileLink.addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent the default link behavior
+          window.location.href = "{% url 'pg_register' %}";
+      });
+  
+      envelopeLink.addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent the default link behavior
+          window.location.href = "{% url 'index' %}";
+      });
+  
+      phoneLink.addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent the default link behavior
+          window.location.href = homeLink.getAttribute("href");
+          // Optionally, you can also scroll to the third tab on the redirected page
+          var tabContents = document.querySelectorAll(".tab-content .tab-pane");
+          tabContents[2].scrollIntoView({ behavior: "smooth" });
+      });
+  });
+  </script>
+</body>
+</html>

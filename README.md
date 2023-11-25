@@ -14,9 +14,118 @@ PG4You is an innovative platform designed to connect PG owners with individuals 
 ✅ Safety First: Prioritize security and privacy through our secure platform.
 
 🎥 About This Video 🎥
-In this demo video, we walk you through the various features and benefits of PG4You. See how easy it is to find and book your dream PG accommodation using our platform. 
+In this demo video, we walk you through the various features and benefits of PG4You. See how easy it is to find and book your dream PG accommodation using our platform.
+https://youtu.be/fngMVOJ-mBQ?si=ehY6ji1zNzHF7Sr3
 
 🌐 Connect with PG4You 🌐
 📧 Email: [ayushibanas1307@gmail.com]
 
-Thank you for choosing PG4You for your PG accommodation needs. Happy relocating!
+# PG4You Project
+
+PG4You is a web application developed using HTML, CSS, and JavaScript for the frontend and Python with the Django framework for the backend. PostgreSQL, powered by pgAdmin, is used for database connectivity.
+
+## Getting Started
+
+### Prerequisites
+
+- [Python](https://www.python.org/) installed prefer 3.8.9
+- [Django](https://www.djangoproject.com/) framework installed prefer 3.2
+- [PostgreSQL](https://www.postgresql.org/) and [pgAdmin](https://www.pgadmin.org/) installed and configured prefer 14
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/pg4you.git
+   cd pg
+
+   Install Python dependencies:
+    pip install -r requirements.txt
+
+   Database Configuration
+    
+In your README file, you can mention the requirement file and how to install the dependencies using it. Here's an example of how you can include this information:
+
+markdown
+Copy code
+# PG4You Project
+
+PG4You is a web application developed using HTML, CSS, and JavaScript for the frontend and Python with the Django framework for the backend. PostgreSQL, powered by pgAdmin, is used for database connectivity.
+
+## Getting Started
+
+### Prerequisites
+
+- [Python](https://www.python.org/) installed
+- [Django](https://www.djangoproject.com/) framework installed
+- [PostgreSQL](https://www.postgresql.org/) and [pgAdmin](https://www.pgadmin.org/) installed and configured
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/pg4you.git
+   cd pg4you
+Install Python dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+The list of dependencies and their versions are specified in the requirements.txt file.
+
+Apply migrations:
+
+bash
+Copy code
+python manage.py migrate
+Run the development server:
+
+bash
+Copy code
+python manage.py runserver
+Requirements
+To install the required Python packages, use the following command:
+
+bash
+Copy code
+pip install -r requirements.txt
+Usage
+Describe how to use your application, any specific features, and functionalities.
+
+Database Configuration
+
+Open pgAdmin and create a new database.
+Update the DATABASES configuration in settings.py with your PostgreSQL credentials.
+
+DATABASES = {
+   
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'pgdb25112023',
+        'USER':'postgres',
+        'PASSWORD': 'Your pg'Admin password,
+        'HOST':'localhost',
+        'PORT':'5432',
+    }
+
+}
+
+Make sure to restore database in pgAdmin 
+
+# Application definition
+In setting.py add pgapp in INSTALLED_APPS
+
+INSTALLED_APPS = [
+
+    'pgapp'
+]
+
+
+
+
+    
+   
+   
+

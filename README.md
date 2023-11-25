@@ -61,40 +61,29 @@ PG4You is a web application developed using HTML, CSS, and JavaScript for the fr
 - [Django](https://www.djangoproject.com/) framework installed
 - [PostgreSQL](https://www.postgresql.org/) and [pgAdmin](https://www.pgadmin.org/) installed and configured
 
+### Set an environment
+
+Run the following to create your environment
+
+
+
 ### Installation
 
 1. Clone the repository:
 
    ```bash
    git clone https://github.com/your-username/pg4you.git
-   cd pg4you
-Install Python dependencies:
+   cd pgproj
+# Install Python dependencies:
 
 bash
 Copy code
 pip install -r requirements.txt
 The list of dependencies and their versions are specified in the requirements.txt file.
 
-Apply migrations:
 
-bash
-Copy code
-python manage.py migrate
-Run the development server:
 
-bash
-Copy code
-python manage.py runserver
-Requirements
-To install the required Python packages, use the following command:
-
-bash
-Copy code
-pip install -r requirements.txt
-Usage
-Describe how to use your application, any specific features, and functionalities.
-
-Database Configuration
+# Database Configuration
 
 Open pgAdmin and create a new database.
 Update the DATABASES configuration in settings.py with your PostgreSQL credentials.
@@ -121,6 +110,24 @@ INSTALLED_APPS = [
 
     'pgapp'
 ]
+
+# Apply Migrations for Database Connectivity
+
+bash
+Copy code
+python manage.py makemigrations
+python manage.py migrate 
+
+
+# Run the development server:
+
+bash
+Copy code
+python manage.py runserver
+Requirements
+
+
+
 
 
 
